@@ -16,7 +16,7 @@ function SMODS.INIT.BlackHoleJokers()
 		'Jokers/RiggedDice.lua',
 		'Jokers/ForbiddenFruit.lua',
 		'Jokers/ShatteredSingularity.lua',
-		'Jokers/LetTheForrestsBurn.lua',
+		'Jokers/LetTheForestsBurn.lua',
 		'Jokers/StarbornGauntlet.lua',
 		'Jokers/GuidingLight.lua',
 		'Jokers/PrismaticLightshow.lua',

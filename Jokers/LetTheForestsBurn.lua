@@ -12,9 +12,9 @@ local let_the_forests_burn_txt = {
 local let_the_forests_burn = SMODS.Joker:new(
 	"Let The Forests Burn", --name
 	"let_the_forests_burn", --slug
-	{extra = {xmult_per = 0.25}}, --config
+	{extra = {xmult_per = 0.2}}, --config
 	{x = 0, y = 0}, --spritePos
-	let_the_forrests_burn_txt, --loc_txt
+	let_the_forests_burn_txt, --loc_txt
 	"Black Hole", --rarity
 	10, --cost
 	true, --unlocked
@@ -59,6 +59,7 @@ let_the_forests_burn.calculate = function(self, context)
 		end
 		if context.destroying_card then
 			if context.destroying_card:is_suit("Clubs", true) then
+				card_eval_status_text(self, 'extra', nil, nil, nil, {message = localize('k_burned')})
 				return true
 			end
 		end

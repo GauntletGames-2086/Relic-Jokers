@@ -123,10 +123,6 @@ rigged_dice.calculate = function(self, context)
 			local dice_roll_1 = pseudorandom_element({1, 2, 3, 4, 5, 6}, pseudoseed('rigged_dice_roll_1'))
 			local dice_roll_2 = pseudorandom_element({1, 2, 3, 4, 5, 6}, pseudoseed('rigged_dice_roll_2'))
 			self.ability.extra.roll_outcome = dice_roll_1 + dice_roll_2
-			if dice_pity == true and self.ability.extra.roll_outcome <= 7 then 
-				dice_pity = false
-				self.ability.extra.roll_outcome = 8
-			end
 			if self.ability.extra.roll_outcome == 12 then
 				card_eval_status_text(self, 'extra', nil, nil, nil, {message = localize('k_jackpot')})
 			elseif self.ability.extra.roll_outcome == 2 then
