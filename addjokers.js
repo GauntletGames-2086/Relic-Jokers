@@ -113,9 +113,10 @@ let jokers = [
     name: "Handbook of Elementals",
     text: [
       "When a {C:attention}Boss Blind{} is",
-      "selected, create an {C:alchemical_backup}Alchemical",
+      "selected, create an {C:alchemical}Alchemical",
       "card for each empty",
-      "{C:attention}consumable slot{}"
+      "{C:attention}consumable slot{}",
+      "{C:attention}Requires {C:alchemical}Codex Arcanum"
     ],
     image_url: "assets/1x/default_joker.png",
     rarity: "Starlight",
@@ -283,6 +284,7 @@ let cols = {
   SPECTRAL: "#4584fa",
   VOUCHER: "#fd682b",
   EDITION: "#4ca893",
+  ALCHEMICAL: "#c09d75",
 }
 
 let rarities = {
