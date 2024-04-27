@@ -374,21 +374,14 @@ let add_cards_to_div = (jokers, jokers_div) => {
 if (bh_jokers.length === 0) {
   document.querySelector(".bh_jokersfull").style.display = "none"
 } else {
-  let jokers_div = document.querySelector(".jokers");
+  let jokers_div = document.querySelector(".bh_jokers");
   add_cards_to_div(bh_jokers, jokers_div);
 }
 
 if (sr_jokers.length === 0) {
   document.querySelector(".sr_jokersfull").style.display = "none"
 } else {
-  let jokers_div = document.querySelector(".jokers");
-  add_cards_to_div(sr_jokers, jokers_div);
-}
-
-if (sr_jokers.length === 0) {
-  document.querySelector(".jokersfull").style.display = "none"
-} else {
-  let jokers_div = document.querySelector(".jokers");
+  let jokers_div = document.querySelector(".sr_jokers");
   add_cards_to_div(sr_jokers, jokers_div);
 }
 
