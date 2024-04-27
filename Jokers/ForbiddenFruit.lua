@@ -4,7 +4,7 @@ local forbidden_fruit_txt = {
 		"Create a {C:spectral}Spectral{} card",
 		"when {C:attention}Blind{} is selected",
 		"Blind size increased by {C:attention}#1#X",
-		"Chance increases by {C:attention}#2#X per",
+		"Increases by {C:attention}#2#X per",
 		"{C:spectral}Spectral{} card used",
 		"{C:inactive}(Must have room)"
 	}
