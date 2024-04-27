@@ -1,4 +1,4 @@
-let jokers = [
+let bh_jokers = [
   {
     name: "Darkness Chains You",
     text: [
@@ -73,7 +73,10 @@ let jokers = [
     image_url: "assets/1x/default_joker.png",
     rarity: "Black Hole",
     soul: false
-  },
+  }
+]
+
+let sr_jokers = [
   {
     name: "Starborn Gauntlet",
     text: [
@@ -368,11 +371,25 @@ let add_cards_to_div = (jokers, jokers_div) => {
   }
 }
 
-if (jokers.length === 0) {
+if (bh_jokers.length === 0) {
+  document.querySelector(".bh_jokersfull").style.display = "none"
+} else {
+  let jokers_div = document.querySelector(".jokers");
+  add_cards_to_div(bh_jokers, jokers_div);
+}
+
+if (sr_jokers.length === 0) {
+  document.querySelector(".sr_jokersfull").style.display = "none"
+} else {
+  let jokers_div = document.querySelector(".jokers");
+  add_cards_to_div(sr_jokers, jokers_div);
+}
+
+if (sr_jokers.length === 0) {
   document.querySelector(".jokersfull").style.display = "none"
 } else {
   let jokers_div = document.querySelector(".jokers");
-  add_cards_to_div(jokers, jokers_div);
+  add_cards_to_div(sr_jokers, jokers_div);
 }
 
 if (consumables.length === 0) {
