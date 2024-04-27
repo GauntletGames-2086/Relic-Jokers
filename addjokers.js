@@ -6,7 +6,7 @@ let jokers = [
       "{X:mult,C:white}1.5X{} Mult when scored",
       "All other suits are {C:attention}debuffed{}"
     ],
-    image_url: "assets/1x/j_joker.png",
+    image_url: "assets/1x/BlackHole_Jokers.png",
     rarity: "Black Hole",
     soul: false
   }
