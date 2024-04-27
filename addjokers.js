@@ -6,8 +6,119 @@ let jokers = [
       "{X:mult,C:white}1.5X{} Mult when scored",
       "All other suits are {C:attention}debuffed{}"
     ],
-    image_url: "assets/1x/BlackHole_Jokers.png",
+    image_url: "assets/1x/default_joker.png",
     rarity: "Black Hole",
+    soul: false
+  },
+  {
+    name: "Market Crash",
+    text: [
+      "Earn {C:money}$100{}",
+      "Cannot earn money",
+      "from {C:attention}payout{}"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Black Hole",
+    soul: false
+  },
+  {
+    name: "Rigged Dice",
+    text: [
+      "At the start of a blind",
+      "roll two {C:attention}6-sided{} dice",
+      "Effect for this joker are determined",
+      "by the dice roll",
+      "{C:inactive}Currently roll: {C:attention}12{C:inactive})"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Black Hole",
+    soul: false
+  },
+  {
+    name: "Forbidden Fruit",
+    text: [
+      "Create a {C:spectral}Spectral{} card",
+      "when {C:attention}Blind{} is selected",
+      "Blind size increased by {C:attention}1X",
+      "Chance increases by {C:attention}0.5X per",
+      "{C:spectral}Spectral{} card used",
+      "{C:inactive}(Must have room)"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Black Hole",
+    soul: false
+  },
+  {
+    name: "Shattered Singularity",
+    text: [
+      "{C:planet}Planet{} cards level up hands",
+      "{C:attention}3{} times instead of one",
+      "Each time a hand is played",
+      "decrease level of every {C:legendary,E:1}poker hand",
+      "by 1 except {C:attention}played hand"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Black Hole",
+    soul: false
+  },
+  {
+    name: "Let The Forests Burn",
+    text: [
+      "{X:mult,C:white}X0.2{} Mult per",
+      "{C:clubs}Club{} card in deck",
+      "Played or discarded {C:clubs}Club",
+      "cards are {C:attention}destroyed",
+      "{C:inactive}Currently X2.8 Mult)"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Black Hole",
+    soul: false
+  },
+  {
+    name: "Starborn Gauntlet",
+    text: [
+      "Increases played poker",
+      "hand {C:chips}Chips{} and {C:mult}Mult{}",
+      "by {C:attention}1.5X when",
+      "hand is played"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Starlight",
+    soul: false
+  },
+  {
+    name: "Guiding Light",
+    text: [
+      "Earn {C:money}$2{} at",
+      "end of round",
+      "for each {C:attention}Joker{} card",
+      "{C:inactive}Excludes Relic Jokers",
+      "{C:inactive}(Currently {C:money}$0{C:inactive})"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Starlight",
+    soul: false
+  },
+  {
+    name: "Prismatic Lightshow",
+    text: [
+      "All {C:attention}Consumables",
+      "spawn with an {C:dark_edition}Edition"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Starlight",
+    soul: false
+  },
+  {
+    name: "Handbook of Elementals",
+    text: [
+      "When a {C:attention}Boss Blind{} is",
+      "selected, create an {C:alchemical_backup}Alchemical",
+      "card for each empty",
+      "{C:attention}consumable slot{}"
+    ],
+    image_url: "assets/1x/default_joker.png",
+    rarity: "Starlight",
     soul: false
   }
 ]
