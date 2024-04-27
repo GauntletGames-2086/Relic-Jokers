@@ -113,22 +113,22 @@ let blinds = [
 ]
 
 let shop_items = [
-  {
-    name: "Joker",
-    text: [
-      "{C:mult}+4{} Mult"
-    ],
-    image_url: "img/j_joker.png",
-    rarity: "Voucher"
-  },
-  {
-    name: "Joker",
-    text: [
-      "{C:mult}+4{} Mult"
-    ],
-    image_url: "img/j_joker.png",
-    rarity: "Pack"
-  },
+  //{
+  //  name: "Joker",
+  //  text: [
+  //    "{C:mult}+4{} Mult"
+  //  ],
+  //  image_url: "img/j_joker.png",
+  //  rarity: "Voucher"
+  //},
+  //{
+  //  name: "Joker",
+  //  text: [
+  //    "{C:mult}+4{} Mult"
+  //  ],
+  //  image_url: "img/j_joker.png",
+  //  rarity: "Pack"
+  //},
 ]
 
 let cols = {
