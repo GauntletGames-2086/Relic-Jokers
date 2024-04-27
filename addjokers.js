@@ -1,12 +1,15 @@
 let jokers = [
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Common"
-  // }
+  {
+    name: "Darkness Chains You",
+    text: [
+      "Card with {C:spades}Spades{} Suit give",
+      "{X:mult,C:white}1.5X{} Mult when scored",
+      "All other suits are {C:attention}debuffed{}"
+    ],
+    image_url: "assets/1x/j_joker.png",
+    rarity: "Black Hole",
+    soul: false
+  }
 ]
 
 // works the same. 
@@ -176,6 +179,8 @@ let rarities = {
   "Uncommon": "#4BC292",
   "Rare": "#fe5f55",
   "Legendary": "#b26cbb",
+  "Black Hole": "#0e072e",
+  "Starlight": "#252785",
   "Joker": "#708b91",
   "Tarot": "#a782d1",
   "Planet": "#13afce",
