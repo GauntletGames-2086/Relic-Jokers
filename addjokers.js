@@ -40,7 +40,7 @@ let bh_jokers = [
       "Create a {C:spectral}Spectral{} card",
       "when {C:attention}Blind{} is selected",
       "Blind size increased by {C:attention}1X",
-      "Chance increases by {C:attention}0.5X per",
+      "Increases by {C:attention}0.5X per",
       "{C:spectral}Spectral{} card used",
       "{C:inactive}(Must have room)"
     ],
