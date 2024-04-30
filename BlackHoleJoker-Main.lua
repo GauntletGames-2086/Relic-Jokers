@@ -9,19 +9,8 @@
 ------------MOD CODE -------------------------
 
 function SMODS.INIT.BlackHoleJokers()
-	SMODS.Sprite:new("BlackHole_Jokers", SMODS.findModByID("BlackHoleJokers").path, "BlackHole_Jokers.png", 71, 95, "asset_atli"):register()
-	local obj_branches = {
-		'Jokers/DarknessChainsYou.lua',
-		'Jokers/MarketCrash.lua',
-		'Jokers/RiggedDice.lua',
-		'Jokers/ForbiddenFruit.lua',
-		'Jokers/ShatteredSingularity.lua',
-		'Jokers/LetTheForestsBurn.lua',
-		'Jokers/StarbornGauntlet.lua',
-		'Jokers/GuidingLight.lua',
-		'Jokers/PrismaticLightshow.lua',
-		'Jokers/HandbookOfElementals.lua',
-	}
+	local mod_path = SMODS.findModByID("BlackHoleJokers").path
+	SMODS.Sprite:new("BlackHole_Jokers", mod_path, "BlackHole_Jokers.png", 71, 95, "asset_atli"):register()
 	G.localization.descriptions.Other.black_hole_joker = {
 		name = 'Black Hole Joker',
 		text = {
@@ -39,10 +28,13 @@ function SMODS.INIT.BlackHoleJokers()
 		}
 	}
 
+    local joker_files = love.filesystem.getDirectoryItems(mod_path.."jokers")
 	local function init_objs()
-		for i, v in ipairs(obj_branches) do
-			local curr_obj = NFS.load(SMODS.findModByID("BlackHoleJokers").path .. obj_branches[i])()
-			curr_obj:register()
+		for k, file in pairs(joker_files) do
+			if string.find(file, ".lua") then
+				local joker = love.filesystem.load(mod_path.."jokers/"..file)()
+				joker:register()
+			end
 		end
 	end
 
